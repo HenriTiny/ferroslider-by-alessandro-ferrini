@@ -14,9 +14,12 @@ Include CSS:
 
 Include JS scripts:
 ```
-<script src="jquery-1.9.1.min.js" type="text/javascript"></script>
 <script src="jquery.transit.min.js" type="text/javascript"></script>
 <script src="jquery.ferro.ferroSlider.min.js" type="text/javascript"></script>
+```
+FerroSlider require jQuery:
+```
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
 ```
 
 HTML:
@@ -105,7 +108,7 @@ Each one of this object has some information inside:
 
 | Function      | Parameters | Description |
 | -----------    | ----------- | ----------- |
-| $.fn.ferroSlider.disableSwipe(flag) | flag: true / false | disable sliding feature according to the flag parameter: if true the swiping feature is disabled, if false is enabled. Useful combined with the events to disable swiping features on certain slides, see demo 7 |
+| $.fn.ferroSlider.disableSwipe(flag) | flag: true / false | disable sliding feature according to the flag parameter: if true the swiping feature is disabled, if false is enabled. Useful combined with the events to disable swiping features on certain slides |
 | $.fn.ferroSlider.getActualSlideId() | - | return the id of the current slide. No parameters provided |
 | $.fn.ferroSlider.play() | - | plays auto transitions. No parameters provided |
 | $.fn.ferroSlider.pause() | - | pauses auto transitions. No parameters provided |
@@ -145,3 +148,9 @@ $('.slidingSpaces').ferroSlider({
     displace: matrix,
 });
 ```
+
+## License
+  
+FerroSlider is licensed under the Apache License, Version 2.0 
+    
+jQuery Transit is under MIT License
