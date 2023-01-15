@@ -1,0 +1,71 @@
+<!doctype html>
+<html>
+<head>
+	<title>Demo 5 - FerroSlider by Alessandro Ferrini</title>
+	<meta name="description" content="Demo 5 - FerroSlider by Alessandro Ferrini">
+
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta http-equiv="X-UA-TextLayoutMetrics" content="gdi">
+
+	<meta name="viewport" content="width=device-width,initial-scale=1">
+	<link rel="stylesheet" href="../jquery.ferro.ferroSlider.css">
+
+	<meta name="author" content="HenriTiny">
+	
+	<style type="text/css">
+		body{
+			margin: 0;
+		}
+		.slidingSpaces{
+			width: 100%;
+			height: 100%;
+		}
+	</style>
+</head>
+
+<body>
+	
+	<div id="div1" class="slidingSpaces" title="Page 1" data-bgimage="images/charlie-m-34_yVm7ZWhw-by-charlie-m-unsplash.jpg">
+		
+	</div>
+	<div id="div2" class="slidingSpaces" title="Page 2" data-bgimage="images/closeup-adorable-chipmunk-standing-stone-surface-park-by-wirestock-freepik.jpg">
+		
+	</div>
+	<div id="div3" class="slidingSpaces" title="Page 3" data-bgimage="images/closeup-shot-cute-squirrel-with-blurred-green-background-by-wirestock-freepik.jpg">
+		
+	</div>
+	<div id="div4" class="slidingSpaces" title="Page 4" data-bgimage="images/closeup-shot-squirrel-eating-pieces-corn-by-wirestock-freepik.jpg">
+		
+	</div>
+	<div id="div5" class="slidingSpaces" title="Page 5" data-bgimage="images/trac-vu-2PRY885PH_Y-by-trac-vu-unsplash.jpg">
+		
+	</div>
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+	<script src="../jquery.ferro.ferroSlider.min.js"></script>
+	<script src="../jquery.transit.min.js"></script>
+	<script>
+		$(document).ready(function() {
+			//custom layout ("Cross" layout), custom easing, custom transition axis, background images;
+			var map = [
+				[
+					{full:1,first:true},{full:0},{full:1}
+				],
+				[
+					{full:0},{full:1},{full:0}
+				],
+				[
+					{full:1},{full:0},{full:1}
+				]
+			];
+			$('.slidingSpaces').ferroSlider({
+				displace: map,
+				createMap: true,
+				easing: 'ease-in-out',
+			});
+		});
+	</script>
+
+</body>
+</html>

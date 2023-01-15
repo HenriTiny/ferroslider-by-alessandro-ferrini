@@ -1,0 +1,57 @@
+<!doctype html>
+<html>
+<head>
+	<title>Demo 2 - FerroSlider by Alessandro Ferrini</title>
+	<meta name="description" content="Demo 2 - FerroSlider by Alessandro Ferrini">
+
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta http-equiv="X-UA-TextLayoutMetrics" content="gdi">
+
+	<meta name="viewport" content="width=device-width,initial-scale=1">
+	<link rel="stylesheet" href="../jquery.ferro.ferroSlider.css">
+
+	<meta name="author" content="HenriTiny">
+	
+	<style type="text/css">
+		body{
+			margin: 0;
+		}
+	</style>
+</head>
+
+<body>
+
+	<div id="div1" class="slidingSpaces" title="Page 1">
+		first page
+	</div>
+	<div id="div2" class="slidingSpaces" title="Page 2">
+		second page 
+	</div>
+	<div id="div3" class="slidingSpaces" title="Page 3">
+		third page  
+	</div>
+	<div id="div4" class="slidingSpaces" title="Page 4">
+		fourth page 
+	</div>
+	<div id="div5" class="slidingSpaces" title="Page 5">
+		fifth page  
+	</div>
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+	<script src="../jquery.ferro.ferroSlider.js"></script>
+	<script src="../jquery.transit.min.js"></script>
+	<script>
+		$(document).ready(function() {
+			//default layout (row), custom easing, navigation map bottom_center positioned
+			$('.slidingSpaces').ferroSlider({
+				displace: 'row',
+				createMap: true,
+				easing: 'snap',
+				mapPosition: 'bottom_center',
+			});
+		});
+	</script>
+
+</body>
+</html>
