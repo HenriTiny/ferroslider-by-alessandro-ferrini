@@ -78,6 +78,7 @@ $(document).ready(function() {
 | timeBarInsidePlayer | true / false | true | encapsulate timeBar inside player. The position of the timeBar is still specified with thetimeBarPosition parameter: with top timeBar will be rendered over the player, with bottom it will render under the player |
 | tips | true / false | false | render map title attribute with nice tooltips |
 | tipsPosition | 'top' / 'right' / 'left' / 'bottom' | 'top' | position of tooltips related to the navigation dot |
+| updateLocation | true / false | true | enable or disable url update |
 
 ## Callback API
 FerroSlider 2 provides two custom events: `startslide` and `startslide`.  
@@ -148,6 +149,10 @@ $('.slidingSpaces').ferroSlider({
     displace: matrix,
 });
 ```
+## Updates
+
+- Add new property `updateLocation` 
+- Fixes to use lastest jQuery version
 
 ## License
   
